@@ -25,34 +25,3 @@ def classification_rate(y, p):
 
 print "Score [% accuracy]: ", classification_rate(y, predictions)
 #>> Score [% accuracy]: 0.610552763819
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

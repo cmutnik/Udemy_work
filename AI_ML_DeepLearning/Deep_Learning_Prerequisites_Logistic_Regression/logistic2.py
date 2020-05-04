@@ -60,36 +60,3 @@ y = sigmoid(z)
 
 print "Cross Entropy Error (closed form): ", cross_entropy_error(t,y)
 #>> Cross Entropy Error (closed form):  0.0708535952774
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
