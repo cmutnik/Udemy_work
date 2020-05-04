@@ -22,7 +22,7 @@ w = np.random.randn(D+1)
 z = xb.dot(w)
 
 def sigmoid(a):
-    return 1/(1 + np.exp(-z))
+    return 1/(1 + np.exp(-a))
 
 y = sigmoid(z)
 
@@ -39,7 +39,7 @@ def cross_entropy_error(t, y):
 #print N == len(t)#>> True
 
 print "Cross Entropy Error: ", cross_entropy_error(t,y)
-#>> Cross Entropy Error:  150.659920796
+#>> Cross Entropy Error:  69.6206716259
 
 
 ############
@@ -59,7 +59,7 @@ z = xb.dot(w)
 y = sigmoid(z)
 
 print "Cross Entropy Error (closed form): ", cross_entropy_error(t,y)
-#>> Cross Entropy Error (closed form):  0.0607226091011
+#>> Cross Entropy Error (closed form):  0.0708535952774
 
 
 
