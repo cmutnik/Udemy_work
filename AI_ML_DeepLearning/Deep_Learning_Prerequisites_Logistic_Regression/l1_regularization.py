@@ -11,7 +11,7 @@ def sigmoid(a):
 N, D = 50, 50
 
 # set x to be uniformly distributed numbers between -5 and 5, subtract 0.5 to center around 0
-x = (np.random.randn(N,D) - 0.5)*10
+x = (np.random.random((N,D)) - 0.5)*10
 
 # have only the first 3 dimensions effect the output and the rest are 0
 true_w = np.array([1, 0.5, -0.5] + [0]*(D-3))
@@ -26,8 +26,8 @@ costs = []
 w = np.random.randn(D) / np.sqrt(D)
 learning_rate = 0.001
 # set l1 penalty...see what happens when you change this to different values
-l1 = 2.0
-#l1=10.
+#l1 = 2.0
+l1=10.
 
 for i in xrange(5000):
     yhat = sigmoid(x.dot(w))
@@ -45,9 +45,9 @@ def plot_costs():
     plt.clf()
     plt.plot(costs)
     plt.title('Costs (From l1_regularization.py)')
-    plt.ylim(0,np.max(costs)*0.1)
-    plt.show()
-    #plt.savefig('figs/l1_regularization_costs_l1penatly_'+str(l1)+'.png')
+    #plt.ylim(0,np.max(costs)*0.1)
+    #plt.show()
+    plt.savefig('figs/l1_regularization_costs_l1penatly_'+str(l1)+'.png')
 plot_costs()
 
 def plot_W_vs_trueW():
@@ -57,6 +57,6 @@ def plot_W_vs_trueW():
     plt.legend()
     #plt.title('Compare w (From l1_regularization.py) with l1 penalty of '+str(l1))
     plt.title('Compare w (From l1_regularization.py)')
-    plt.show()
-    #plt.savefig('figs/l1_regularization_compareW_l1penalty_'+str(l1)+'.png')
+    #plt.show()
+    plt.savefig('figs/l1_regularization_compareW_l1penalty_'+str(l1)+'.png')
 plot_W_vs_trueW()
