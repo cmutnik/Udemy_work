@@ -46,8 +46,8 @@ def plot_costs():
     plt.plot(costs)
     plt.title('Costs (From l1_regularization.py)')
     plt.ylim(0,np.max(costs)*0.1)
-    #plt.show()
-    plt.savefig('figs/l1_regularization_costs_l1penatly_'+str(l1)+'.png')
+    plt.show()
+    #plt.savefig('figs/l1_regularization_costs_l1penatly_'+str(l1)+'.png')
 plot_costs()
 
 def plot_W_vs_trueW():
@@ -57,40 +57,6 @@ def plot_W_vs_trueW():
     plt.legend()
     #plt.title('Compare w (From l1_regularization.py) with l1 penalty of '+str(l1))
     plt.title('Compare w (From l1_regularization.py)')
-    #plt.show()
-    plt.savefig('figs/l1_regularization_compareW_l1penalty_'+str(l1)+'.png')
+    plt.show()
+    #plt.savefig('figs/l1_regularization_compareW_l1penalty_'+str(l1)+'.png')
 plot_W_vs_trueW()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
