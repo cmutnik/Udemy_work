@@ -1,0 +1,1 @@
+I completed this Udemy course using google colab.  The file 'NLP.ipynb' are all my notes and work from this course.
