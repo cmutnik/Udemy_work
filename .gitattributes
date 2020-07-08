@@ -2,4 +2,4 @@
 *.ipynb linguist-language=Python
 
 # Replace any whitespace in the language name with hyphens:
-#*.js linguist-language=Java-Script
+#*.glyphs linguist-language=OpenStep-Property-List
