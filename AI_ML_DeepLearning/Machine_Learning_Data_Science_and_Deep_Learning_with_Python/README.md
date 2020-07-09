@@ -3,7 +3,8 @@ This is a Udemy class for Machine Learning.  Link to class [here.](https://bah.u
 
 Course materials can be found [here.](https://sundog-education.com/machine-learning/).  There you can get the zip file, `MLCourse.zip`, that contains images, `*.ipynb` files, etc.
 
-This [`README`](./README.md) will serve as my wiki page for this class.  My work for this class will be contained in this github repo.
+This [`README`](./README.md) will serve as my wiki page, for this class.
+<!--  My work for this class will be contained in this github repo.-->
 
 ----
 ## Class Requirements
@@ -50,8 +51,9 @@ print(r2)
 ## Naive Bayes Classifier
 Instructor provided steps for making a Naive Bays (NB) Classifier are shown in [`NaiveBayes.ipynb`.](./notebooks/provided/NaiveBayes.ipynb) 
 In this example, we are given two sets of email:
-1. - emails known to be `spam`
-2. - emails known to be `ham` (not spam)
+1. emails known to be `spam`
+2. emails known to be `ham` (not spam)
+
 The data sets are provided in the course materials.  Spam emails are located in `MLCourse/emails/spam`.  Similarly, non-spam emails be found in `MLCourse/emails/spam`.<br>
 Most of the code is used to merely clean and separate the data.  The actual NB code works by counting all identifying words and using Bayes Theorem to assign weights to each word.  This is then used to determine the overall probability of an email (or any body of text) being spam, and subsequently classifying each email.
 
