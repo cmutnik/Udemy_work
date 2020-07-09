@@ -51,8 +51,8 @@ print(r2)
 ## Naive Bayes Classifier
 Instructor provided steps for making a Naive Bays (NB) Classifier are shown in [`NaiveBayes.ipynb`.](./notebooks/provided/NaiveBayes.ipynb) 
 In this example, we are given two sets of email:
-1. - emails known to be `spam`
-2. - emails known to be `ham` (not spam)
+1. emails known to be `spam`
+2. emails known to be `ham` (not spam)<br>
 The data sets are provided in the course materials.  Spam emails are located in `MLCourse/emails/spam`.  Similarly, non-spam emails be found in `MLCourse/emails/spam`.<br>
 Most of the code is used to merely clean and separate the data.  The actual NB code works by counting all identifying words and using Bayes Theorem to assign weights to each word.  This is then used to determine the overall probability of an email (or any body of text) being spam, and subsequently classifying each email.
 
