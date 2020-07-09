@@ -50,6 +50,8 @@ print(r2)
 ----
 ## Naive Bayes Classifier
 Instructor provided steps for making a Naive Bays (NB) Classifier are shown in [`NaiveBayes.ipynb`.](./notebooks/provided/NaiveBayes.ipynb) 
+My modifications, to use a train test split on our data set, can be seen in [`NaiveBayesTrainTestSplit.ipynb`.](./notebooks/made/NaiveBayesTrainTestSplit.ipynb)
+
 In this example, we are given two sets of email:
 1. emails known to be `spam`
 2. emails known to be `ham` (not spam)
