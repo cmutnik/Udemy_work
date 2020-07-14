@@ -1,5 +1,5 @@
 # Machine Learning, Data Science and Deep Learning with Python
-This is a Udemy class for Machine Learning.  Link to class [here.](https://bah.udemy.com/course/data-science-and-machine-learning-with-python-hands-on)
+This is a Udemy class for Machine Learning (ML).  Link to class [here.](https://bah.udemy.com/course/data-science-and-machine-learning-with-python-hands-on)
 
 Course materials can be found [here.](https://sundog-education.com/machine-learning/)  There you can get the zip file, `MLCourse.zip`, that contains images, `*.ipynb` files, etc.
 
@@ -102,6 +102,8 @@ As we can see, our NB classifier properly categorized both of our test messages.
 
 ----
 ## K--Means Clustering
+K--means clustering is an unsupervised ML technique for distinguishing groupings from unlabeled data.  While k-means can provide grouping, it does not provide labels.  Once groupings are given, actual labels must be determined by inspecting the groupings and discerning characteristics that set them apart from. 
+
 Modify instructor provided lesson, to change number of `k` data clusters. The code for creating data clusters, `createClusteredData()`, can be found in [`KMeans.ipynb`.](./notebooks/made/KMeans.ipynb)
 ```py
 from sklearn.cluster import KMeans
@@ -125,6 +127,10 @@ print(model.labels_)
 plt.scatter(data[:,0], data[:,1], c=model.labels_.astype(np.float))
 ```
 
+![](./figs/KMeans.png)
+
+----
+## 
 
 <!--
 ----
