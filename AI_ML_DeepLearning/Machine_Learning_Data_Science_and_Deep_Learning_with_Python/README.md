@@ -100,6 +100,31 @@ predictions
 As we can see, our NB classifier properly categorized both of our test messages.
 
 
+----
+## K--Means Clustering
+Modify instructor provided lesson, to change number of `k` data clusters. The code for creating data clusters, `createClusteredData()`, can be found in [`KMeans.ipynb`.](./notebooks/made/KMeans.ipynb)
+```py
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import scale
+import numpy as np
+
+# create randomly clustered data
+data = createClusteredData(100, 5)
+
+# set up our k-means model
+model = KMeans(n_clusters=4)
+
+# apply model to our scale data
+model = model.fit(scale(data))
+
+# visually inspect clustered data
+print(model.labels_)
+
+# plot clusterings
+plt.scatter(data[:,0], data[:,1], c=model.labels_.astype(np.float))
+```
+
 
 <!--
 ----
