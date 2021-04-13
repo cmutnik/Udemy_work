@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  tf-jupyter:
+    image: jupyter/tensorflow-notebook:latest
+    environment:
+      - JUPYTER_TOKEN=${JUPYTER_TOKEN}
+    volumes:
+      - ./notebooks:/tf/notebooks
+      - ./notebooks/images:/tf/notebooks/images
+      - ./notebooks/data:/tf/notebooks/data
+    working_dir: /tf/notebooks/
+    ports:
+      # Jupyter port
+      - "8888:8888"
+      # Tensorboard port
+      - "6006:6006"
